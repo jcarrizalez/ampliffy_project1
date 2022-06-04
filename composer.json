@@ -1,0 +1,55 @@
+{
+    "repositories": [
+        {
+            "type":"package",
+            "package": {
+              "name": "ampliffy/library1",
+              "version":"1.0",
+              "source": {
+                  "url": "https://github.com/jcarrizalez/ampliffy_library1.git",
+                  "type": "git",
+                  "reference":"master"
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+              "name": "ampliffy/library2",
+              "version":"1.0",
+              "source": {
+                  "url": "https://github.com/jcarrizalez/ampliffy_library2.git",
+                  "type": "git",
+                  "reference":"master"
+                }
+            }
+        },
+        {
+            "type":"package",
+            "package": {
+              "name": "ampliffy/library4",
+              "version":"1.0",
+              "source": {
+                  "url": "https://github.com/jcarrizalez/ampliffy_library4.git",
+                  "type": "git",
+                  "reference":"master"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": ">= 7.4",
+        "graftak/country-code-helper": "^2.0",
+        "ampliffy/library1": "^1.0",
+        "ampliffy/library2": "^1.0",
+        "ampliffy/library4": "^1.0",
+        "nesbot/carbon": "^2.58"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ampliffy\\Library1\\": "./vendor/ampliffy/library1/src/",
+            "Ampliffy\\Library2\\": "./vendor/ampliffy/library2/src/",
+            "Ampliffy\\Library4\\": "./vendor/ampliffy/library4/src/"
+        }
+    }
+}
